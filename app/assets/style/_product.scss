@@ -1,0 +1,112 @@
+.navbar {
+  .container {
+    @include pad {
+      max-width: 992px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .nav-item {
+    width: 33.33%;
+    border: 1px solid #dcdcdc;
+    @include phone {
+      padding: 16px 12px;
+    }
+
+    &:not(:last-child) {
+      border-right: 0;
+    }
+    &:hover {
+      border-bottom: 8px solid $primary;
+      padding-bottom: 16px;
+      @include phone {
+        padding-bottom: 8px;
+      }
+    }
+    .nav-link {
+      color: #000;
+      @include pad {
+        font-size: $font-m;
+      }
+      @include phone {
+        font-size: $font-size-base;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.product-banner {
+  margin-bottom: 40px;
+  img {
+    width: 50%;
+    &:nth-child(1) {
+      @include pad {
+        content: url("../images/product-header-sm-3.png");
+      }
+    }
+    &:nth-child(2) {
+      @include pad {
+        content: url("../images/product-header-sm-4.png");
+      }
+    }
+  }
+}
+.newproduct {
+  h1 {
+    @include phone {
+      font-size: $font-m;
+    }
+  }
+  h2 {
+    @include phone {
+      font-size: $font-m;
+    }
+  }
+}
+.product {
+  .card {
+    width: 33.33%;
+    @include phone {
+      width: 100%;
+    }
+  }
+}
+.pickcolor {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+.pickcolor-brown {
+  background: #5f3e2d;
+}
+.pickcolor-orange {
+  background: #b75929;
+}
+
+.pagination {
+  &-item {
+    border: 1px solid #555555;
+    &:not(:last-child) {
+      border-right: 0;
+    }
+  }
+  &-link {
+    display: block;
+    font-size: 18px;
+    padding: 12px 16px;
+    color: #555555;
+    &:first-child {
+      font-size: 19px;
+      padding: 11px 12px;
+    }
+    &:last-child {
+      font-size: 19px;
+      padding: 11px 12px;
+    }
+    &:hover {
+      background: #000;
+      color: $white;
+    }
+  }
+}

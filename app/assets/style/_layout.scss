@@ -1,0 +1,162 @@
+header {
+  background: $primary;
+  .container {
+    @include phone {
+      max-width: 768px;
+    }
+  }
+}
+.header {
+  @include phone {
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+}
+.logo {
+  width: 80px;
+  @include phone {
+    margin: 0 auto;
+    margin-bottom: 4px;
+  }
+}
+.nav {
+  @include phone {
+    border: 1px solid white;
+  }
+  li {
+    &:last-child a {
+      padding-right: 0;
+      @include phone {
+        padding-right: 32px;
+      }
+    }
+    @include phone {
+      width: 50%;
+    }
+    &:nth-child(1) {
+      @include phone {
+        border-bottom: 1px solid white;
+        border-right: 1px solid white;
+      }
+    }
+    &:nth-child(2) {
+      @include phone {
+        border-bottom: 1px solid white;
+      }
+    }
+    &:nth-child(3) {
+      @include phone {
+        border-right: 1px solid white;
+      }
+    }
+  }
+  a {
+    &:hover {
+      color: $secondary;
+      @include phone {
+        background: $white;
+        color: $primary;
+        font-weight: 900;
+      }
+    }
+    @include phone {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+footer {
+  background: $primary;
+  @include phone {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .container {
+    position: relative;
+  }
+}
+.info {
+  @include phone {
+    margin-bottom: 0;
+  }
+}
+.info-nav {
+  @include phone {
+    display: none;
+  }
+  li {
+    &:nth-child(1) a {
+      padding-left: 0;
+    }
+  }
+}
+.info-community {
+  @include phone {
+    position: absolute;
+    right: 13px;
+    top: 0;
+  }
+
+  li {
+    @include pad {
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  a {
+    display: inline-block;
+    width: 48px;
+    @include pad {
+      width: 40px;
+    }
+    @include phone {
+      width: 24px;
+    }
+  }
+}
+.contact {
+  border-bottom: 1px solid white;
+  @include phone {
+    padding-bottom: 24px;
+    margin-bottom: 16px;
+  }
+  .material-symbols-outlined {
+    font-size: $font-xl;
+    color: $white;
+    @include phone {
+      font-size: $font-s;
+      margin-right: 10px;
+    }
+  }
+  a {
+    font-family: "Noto Sans TC";
+    @include phone {
+      font-size: $font-size-base;
+    }
+  }
+}
+.declare {
+  @include phone {
+    display: block;
+  }
+  p {
+    @include phone {
+      margin-bottom: 8px;
+    }
+  }
+  ul {
+    @include phone {
+      display: block;
+    }
+    li:nth-child(1) {
+      @include phone {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
