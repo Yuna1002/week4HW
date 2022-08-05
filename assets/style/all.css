@@ -576,6 +576,9 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     padding-right: 0;
     padding-left: 0;
     padding-bottom: 0; } }
@@ -624,6 +627,7 @@ header {
 
 @media (max-width: 768px) {
   .nav a {
+    font-size: 16px;
     width: 100%;
     text-align: center; } }
 
@@ -746,6 +750,8 @@ footer {
   @media (max-width: 768px) {
     .professional-content li {
       width: 100%; } }
+  .professional-content li img {
+    width: 100px; }
 
 .classic-content li {
   width: 33.33%; }
@@ -911,7 +917,7 @@ footer {
       font-size: 24px; } }
 
 .faq ul {
-  width: 856px; }
+  width: 66%; }
   @media (max-width: 992px) {
     .faq ul {
       width: 100%; } }
