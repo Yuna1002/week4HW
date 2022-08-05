@@ -9,6 +9,7 @@ header {
 .header {
   @include phone {
     flex-direction: column;
+    align-items: stretch;
     padding-right: 0;
     padding-left: 0;
     padding-bottom: 0;
@@ -62,6 +63,7 @@ header {
       }
     }
     @include phone {
+      font-size: $font-size-base;
       width: 100%;
       text-align: center;
     }

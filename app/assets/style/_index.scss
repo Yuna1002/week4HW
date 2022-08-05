@@ -47,6 +47,9 @@
     @include phone {
       width: 100%;
     }
+    img {
+      width: 100px;
+    }
   }
 }
 .classic-content {
