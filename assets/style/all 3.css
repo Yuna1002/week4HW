@@ -712,6 +712,7 @@ footer {
   background-image: url("../images/home-header.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh; }
   @media (max-width: 768px) {
     .banner {
@@ -783,7 +784,8 @@ footer {
 .together {
   background-image: url("../images/index-bg.png");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
   @media (max-width: 768px) {
     .together {
       padding-bottom: 40px; } }
